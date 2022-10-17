@@ -71,7 +71,7 @@ const caesarCipher = (num, encode) => {
       continue;
     }
     /* The index of the current letter added with the shift number is told not to exceed 25. If it does it continues counting from zero */
-    shiftedLetterIndex = (reversedAlphabet.indexOf(text[i]) + shiftNum) % 26;
+    const shiftedLetterIndex = (reversedAlphabet.indexOf(text[i]) + shiftNum) % 26;
 
     /* The index is then used to find the encoded/decoded letter in the 'reversedAlphabet' const and appends it to the output variable */
     output += reversedAlphabet[shiftedLetterIndex];
